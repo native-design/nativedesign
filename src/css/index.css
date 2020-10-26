@@ -1,0 +1,4 @@
+*, :after, :before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}

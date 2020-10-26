@@ -1,0 +1,139 @@
+/* animation */
+@keyframes nd-fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nd-fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes nd-rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes nd-scale-up {
+    from {
+        transform: scale(.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes nd-scale-down {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.5);
+    }
+}
+
+@keyframes nd-flip {
+    from {
+        transform: rotateX(0);
+    }
+
+    to {
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes nd-swing {
+    from {
+        transform: rotateX(0);
+        transform-origin: top;
+    }
+
+    to {
+        transform: rotateX(180deg);
+        transform-origin: top;
+    }
+}
+
+@keyframes nd-slidein {
+    from {
+        transform: translateY(30px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes nd-slideout {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+.nd-anim {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+}
+
+.nd-anim-fadein {
+    animation-name: nd-fadein;
+}
+
+.nd-anim-fadeout {
+    animation-name: nd-fadeout;
+}
+
+.nd-anim-rotate {
+    animation-name: nd-rotate;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+}
+
+.nd-anim-scale-up {
+    animation-name: nd-scale-up;
+}
+
+.nd-anim-scale-down {
+    animation-name: nd-scale-down;
+}
+
+.nd-anim-flip {
+    animation-name: nd-flip;
+}
+
+.nd-anim-swing {
+    animation-name: nd-swing;
+}
+
+.nd-anim-slidein {
+    animation-name: nd-slidein;
+}
+
+.nd-anim-slideout {
+    animation-name: nd-slideout;
+}
+
+.nd-anim-infinite {
+    animation-iteration-count: infinite
+}

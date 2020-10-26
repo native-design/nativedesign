@@ -1,0 +1,29 @@
+/* btn group */
+.nd-btn-group {
+    border-color: rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    max-width: 100%;
+    flex: 0 1 auto;
+    display: inline-flex;
+    position: relative;
+    transition: .3s cubic-bezier(.25, .8, .5, 1);
+    margin-bottom: 2px;
+}
+
+.nd-btn-group .nd-btn {
+    border-radius: 0;
+}
+
+.nd-btn-group .nd-btn:first-child {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.nd-btn-group .nd-btn:last-child {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.nd-btn-group.nd-btn-group-rounded {
+    border-radius: 24px;
+}
